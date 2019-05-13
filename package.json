@@ -6,9 +6,10 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/JakeLWeiss/electron-SMS-for-android.git",
   "author": "SegFault",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.0",
+    "electron-packager": "^13.1.1"
   }
 }
