@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "electron .",
 		"pack": "electron-builder --dir",
-  		"dist": "electron-builder"
+		"dist": "electron-builder"
 	},
 	"repository": "https://github.com/JakeLWeiss/electron-SMS-for-android.git",
 	"author": "SegFault",
@@ -14,7 +14,9 @@
 		"electron": "^6.0.3",
 		"electron-builder": "^21.2.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"electron-context-menu": "^0.14.0"
+	},
 	"build": {
 		"appId": "windows-android-sms",
 		"dmg": {
