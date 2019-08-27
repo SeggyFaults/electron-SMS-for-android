@@ -1,15 +1,45 @@
 {
-  "name": "windows-android-sms",
-  "version": "1.0.0",
-  "description": "A minimal Electron application for messages.android.com",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/JakeLWeiss/electron-SMS-for-android.git",
-  "author": "SegFault",
-  "devDependencies": {
-    "electron": "^5.0.0",
-    "electron-packager": "^13.1.1"
-  }
+	"name": "windows-android-sms",
+	"version": "1.0.0",
+	"description": "A minimal Electron application for messages.android.com",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+  		"dist": "electron-builder"
+	},
+	"repository": "https://github.com/JakeLWeiss/electron-SMS-for-android.git",
+	"author": "SegFault",
+	"devDependencies": {
+		"electron": "^6.0.3",
+		"electron-builder": "^21.2.0"
+	},
+	"dependencies": {},
+	"build": {
+		"appId": "windows-android-sms",
+		"dmg": {
+			"contents": [
+				{
+					"x": 110,
+					"y": 150
+				},
+				{
+					"x": 240,
+					"y": 150,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			]
+		},
+		"win": {
+			"target": "nsis",
+			"icon": "build/icon.ico"
+		}
+	}
 }
