@@ -1,5 +1,5 @@
 {
-	"name": "windows-android-sms",
+	"name": "desktop-android-sms",
 	"version": "1.0.0",
 	"description": "A minimal Electron application for messages.android.com",
 	"main": "main.js",
