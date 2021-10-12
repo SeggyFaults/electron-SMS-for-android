@@ -11,7 +11,7 @@
 	"repository": "https://github.com/JakeLWeiss/electron-SMS-for-android.git",
 	"author": "SegFault",
 	"devDependencies": {
-		"electron": "^9.4.0",
+		"electron": "^11.5.0",
 		"electron-builder": "^21.2.0"
 	},
 	"dependencies": {
